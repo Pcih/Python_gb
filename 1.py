@@ -19,7 +19,7 @@ for i in range(user_len):
 
 print('Сгенерированный список{}'.format(list_number))
 
-# Цыкл проходит по всем значениям из списка.
+# Цикл проходит по всем значениям из списка.
 for ramdom_time in list_number:
     day = ramdom_time // 24 // 3600                                                          # Вычесляем дни.
     hour = (ramdom_time - day * 24 * 60 * 60) // 3600                                        # Вычесляем часы.

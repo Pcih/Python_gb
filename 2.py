@@ -11,7 +11,7 @@ cubes = [x**3 for x in range (1000) if  x%2 != 0 ]
 
 sum_number = 0
 sum_namber_list=[]
-
+print('Cоздан список кубов нечётных чисел {}'.format(cubes))
 # итерация по списку
 for i in range(len(cubes)):
     my_str = str(cubes[i])
@@ -22,7 +22,7 @@ for i in range(len(cubes)):
     
     for i in range(len(my_list)):
         sum_number = sum_number + my_list[i]
-
+        
     #Условие,сумма чисел делится нацело на 7
     if sum_number % 7 == 0:
         print('Cумму чисел, делящихся на 7 : ',sum_number)
