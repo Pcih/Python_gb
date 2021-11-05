@@ -16,8 +16,8 @@ list_number = []
 for i in range(user_len):
      list_number.append(randint(0, 864000))
 
-# print(list_number) - Был просто тест рандом списка 
-i = 0
+
+print('Сгенерированный список{}'.format(list_number))
 
 # Цыкл проходит по всем значениям из списка.
 for ramdom_time in list_number:
