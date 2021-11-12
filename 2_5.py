@@ -14,7 +14,7 @@
 # 4. Вывести цены пяти самых дорогих товаров. Сможете ли вывести цены этих товаров по возрастанию, написав минимум кода?
 
 # 1. Создал список для работы и вывел id для сравнения из 2-го пункта.
-price_list = [99.7, 4.33, 15.1, 23.5, 77.3]
+price_list = [99.7, 4.33, 15.1, 23.5, 77.3, 112.23, 12.22, 55.2, 12.1, 147.12]
 price_new = ""
 print(id(price_list))
 
@@ -66,7 +66,7 @@ price_list.sort(reverse=True)
 i = 0
 price_new = ""
 print(id(price_list))
-while i < 3:    
+while i < 5:    
     rub_pice = price_list[i] // 1
     kop_prici = price_list[i] % 1 * 100
     rub_prici_new = str(round(rub_pice))
@@ -74,5 +74,5 @@ while i < 3:
     price_new = price_new + (f' "Цена {rub_prici_new} руб. {kop_prici_new} коп." ')
     i += 1 
 print(price_new)
-print('Список 3 самые дорогие позиции ')
+print(f'Список {i} самые дорогие позиции ')
 print(" ")
